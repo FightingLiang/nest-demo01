@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传单个文件</title>
+    <link href="/static/style.css" rel="stylesheet"></link>
+</head>
+
+<body>
+<div class="wrap">
+    <div>
+        <form action="/upload/doAdd" method="post" enctype="multipart/form-data">
+            <input type="text" name="title" placeholder="新闻标题" /><br/>
+            <input type="text" name="keywords" placeholder="关键词" /><br/>
+            <input type="text" name="author" placeholder="作者" /><br/>
+            <input type="file" name="avator" /><br/>
+            <input type="submit" value="提交表单" multiple />
+        </form>
+    </div>
+</div>
+</body>
+</html>

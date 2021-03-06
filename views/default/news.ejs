@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演示提交post请求，并且重定向到当前页面</title>
+    <link href="/static/style.css" rel="stylesheet"></link>
+</head>
+
+<body>
+<div class="wrap">
+    <h1>
+        这是新闻列表
+    </h1>
+    <ul>
+    <%for(let i = 0;i < newsList.length; i++){%>
+            <li>
+                <%=newsList[i].title%>
+            </li>
+            <%}%>
+    </ul>
+</div>
+</body>
+</html>

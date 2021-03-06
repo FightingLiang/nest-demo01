@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演示提交post请求，并且重定向到当前页面</title>
+    <link href="/static/style.css" rel="stylesheet"></link>
+</head>
+
+<body>
+<div class="wrap">
+    <h1>
+        这是一个post请求
+    </h1>
+    <div>
+        <form action="/user/create" method="post">
+            <input type="text" name="username" placeholder="请输入你的姓名" /><br/>
+            <input type="text" name="mobile" placeholder="请输入你的手机号" /><br/>
+            <input type="password" name="pass" placeholder="请输入你的密码" /><br/>
+            <input type="submit" value="提交表单" />
+        </form>
+    </div>
+    <div>
+        <img src="/static/test-img.jpg" />
+    </div>
+</div>
+</body>
+</html>
